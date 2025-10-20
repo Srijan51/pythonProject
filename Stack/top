@@ -1,0 +1,34 @@
+stack=list()
+
+def isEmpty(stack):
+    if len(stack)==0:
+        return True
+    else:
+        return False
+
+def element():
+    a=input("Enter the element")
+    return a
+
+def push(stack,element):
+    stack.append(element)
+
+def top(stack):
+    if isEmpty(stack):
+        print("Stack is empty")
+        return None
+    else:
+        x=len(stack)
+        top=stack[x-1]
+        return element
+    
+def display(stack):
+    x=len(stack)
+    for i in range(x-1,-1,-1):
+        print(stack[i])
+    
+isEmpty(stack)
+element()
+push(stack,element)
+top(stack)
+display(stack)

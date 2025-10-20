@@ -1,0 +1,10 @@
+import csv
+f=open("first.csv","w",newline="")
+spamwriter = csv.writer(f)
+spamwriter.writerow(['Srijan']*5)
+spamwriter.writerow(['Mother International School','PCM'])
+rows=[["Studying in class 12"],
+["Subjects:Physics, Chemistry, Maths"],
+["Will be pursuing higher studies in IIT"]]
+spamwriter.writerows(rows)
+f.close()

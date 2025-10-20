@@ -1,0 +1,18 @@
+fh=open("story.txt","r")
+contents=fh.read()
+wordlt=contents.split()
+freq=[]
+high=0
+word=""
+existing=[]
+for w in wordlt:
+    wcount=wordlt.count(w)
+    if w not in existing:
+        freq.append([w,wcount])
+        existing.append(w)
+    if wcount>high:
+        high=wcount
+        word=w
+print("The word '",word,"' occurs maximum ",high," times.")
+print(freq)
+print 

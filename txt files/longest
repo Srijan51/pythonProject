@@ -1,0 +1,10 @@
+f=open("story.txt","r")
+c=f.readlines()
+w=c.split()
+l=""
+def longestword(n):
+    for ch in n:
+        if len(ch)>len(l):
+            l=ch
+    print(l)
+longestword(w)

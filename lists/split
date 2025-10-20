@@ -1,0 +1,15 @@
+l1=[]
+z=int(input("Enter no of inputs"))
+for i in range(z):
+    a=int(input("Enter the number"))
+    l1.append(a)
+print("The list is:",l1)
+c=len(l1)
+if c%2==0:
+    x=c//2
+else:
+    x=(c-1)//2
+l2=l1[0:x]
+l3=l1[x:c]
+l3.extend(l2)
+print(l3)

@@ -1,0 +1,11 @@
+'''
+f=open("practice.txt","w")
+l=[]
+for i in range (2):
+    str=input("Enter the lines")
+    l.append(str)
+f.writelines(l)
+'''
+fh=open("practice.txt","r")
+a=fh.read()
+print(a)

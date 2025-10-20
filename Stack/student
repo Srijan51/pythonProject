@@ -1,0 +1,17 @@
+def push(stack,element):
+    stack.append(element)
+    top=len(stack)-1
+
+def display(stack):
+    x=len(stack)
+    for i in range(x-1,-1,-1):
+        print(stack[i])
+
+stk=[]
+for i in range(5):
+    a=input("Enter name")
+    b=int(input("Enter marks"))
+    l=[a,b]
+    push(stk,l)
+
+display(stk)

@@ -1,0 +1,16 @@
+import csv
+
+fh=open("prac.csv","w")
+w=csv.writer(fh)
+w.writerow(["Roll","Name"])
+for i in range(5):
+    roll=int(input("Enter the roll"))
+    name=input("Enter the name")
+    w.writerow([roll,name])
+fh.close()
+'''
+f=open("prac.csv","r")
+r=csv.reader(f)
+for i in r:
+    print (i)
+'''

@@ -1,0 +1,34 @@
+'''
+def readword():
+    f1=open("story.txt","r")
+    r=f1.read()
+    l1=r.split()
+    c=0
+    for rec in l1:
+        print(rec)
+        c=c+1
+    print("no of word ",c)
+    f1.close()
+readword()
+'''
+'''
+def findletter():
+    f2=open("story.txt","r")
+    lst=f2.readlines()
+    for rec in lst:
+        if rec[0]=='s' or rec[0]=='S':
+            print(rec)
+    f2.close()
+findletter()
+'''
+def vowel():
+    f3=open("story1.txt","r")
+    lst=f3.readlines()
+    for rec in lst:
+        print(rec)
+        p=0
+        for ch in rec:
+            if ch in"AEIOUaeiou":
+                p=p+1
+        print(p)
+vowel()

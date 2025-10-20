@@ -1,0 +1,10 @@
+import csv
+f=open("data.csv","w",newline="")
+wr=csv.writer(f)
+rows=[[23,"Srijan",98],
+[42,"Robin",75],
+[24,"James",82],
+[86,"Jonas",85],
+[53,"Egon",63]]
+wr.writerows(rows)
+f.close()

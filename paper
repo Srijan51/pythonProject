@@ -1,0 +1,23 @@
+import csv
+fh=open("stu.csv","w+")
+
+w=csv.writer(fh)
+w.writerow(["id","name","marks"])
+for i in range(5):
+    id=int(input("Enter the id"))
+    n=input("Enter the name")
+    m=int(input("Enter the marks"))
+    a=[id,n,m]
+    w.writerow(a)
+fh.close()
+f=open("stu.csv","r+")
+r=csv.reader(f)
+s=int(input("Enter the id to be searched"))
+found=0
+for i in r:
+    if s==i[0]:
+        print(i)
+        found=1
+if found==1:
+    print("Search successful")
+f.close()

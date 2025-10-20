@@ -1,0 +1,13 @@
+import calendar
+
+# initialize the year and the month variables
+yr = int(input("Enter the year"))
+c = int(input("Enter 1 for specific month or 2 for whole calendar"))
+if c == 1:
+    m = int(input("Enter the month no:"))
+    print(calendar.month(yr, m))
+if c == 2:
+    for i in range(1, 13):
+        # printing the calendar
+
+        print(calendar.month(yr, i))

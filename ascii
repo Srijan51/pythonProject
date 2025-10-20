@@ -1,0 +1,10 @@
+w=input("Enter the word")
+n=len(w)
+ch=""
+max=0
+for i in range(n):
+    if ord(w[i])>max:
+        max=ord(w[i])
+        ch=w[i]
+        p=i
+print(ch,max,p+1)

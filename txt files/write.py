@@ -1,0 +1,7 @@
+f1=open("story.txt","r")
+r=f1.read()
+f2=open("story1.txt","a+")
+s=f2.read()
+r.append(s)
+f1.close()
+f2.close()

@@ -1,0 +1,8 @@
+import csv
+f=open("data.csv","r")
+s=csv.reader(f)
+sum=0
+for row in s:
+    sum=sum+int(row[2])
+print(sum)
+f.close()

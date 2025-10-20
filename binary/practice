@@ -1,0 +1,16 @@
+import pickle
+
+stu={}
+fh=open("prac.dat","wb")
+for i in range(5):
+    roll=int(input("Enter the roll"))
+    sub=input("Enter the subject")
+    stu["roll"]=roll
+    stu["subject"]=sub
+    pickle.dump(stu,fh)
+fh.close()
+
+f=open("prac.dat","rb")
+for i in range(5):
+    r=pickle.load(f)
+    print(r)

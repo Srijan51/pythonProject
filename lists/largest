@@ -1,0 +1,11 @@
+l1=[]
+for i in range(0,5):
+    a=int(input("Enter the number"))
+    l1.append(a)
+print("The list is:",l1)
+c=len(l1)
+l=0
+for i in range(c):
+    if l<l1[i]:
+        l=l1[i]
+print("The largest number is:",l)

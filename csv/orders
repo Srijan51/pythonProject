@@ -1,0 +1,17 @@
+import csv
+fh=open("pricelist.csv","w",newline="")
+r=csv.writer(fh)
+lst=[["order id","name","price"]]
+while True:
+    o=int(input("Enter order id:"))
+    p=float(input("Enter the price:"))
+    n=input("Enter the name:")
+    lst.append([o,n,p])
+    a=input("Do u want to enter more?(y/n):")
+    if a=="y":
+        continue
+    else:
+        break
+r.writerows(lst)
+print("Records written")
+fh.close()

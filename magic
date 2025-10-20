@@ -1,0 +1,14 @@
+n=int(input("Enter the number"))
+m=n
+s=n
+while s>9:
+    n=s
+    s=0
+    while n!=0:
+        r=n%10
+        s=s+r
+        n=n//10
+if s==1:
+    print("Magic no")
+else:
+    print("Not magic no")

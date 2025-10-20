@@ -1,0 +1,12 @@
+n = int(input("Enter the number"))
+a = 0
+p = 0
+while n > 0:
+    d = n % 10
+    if d == 0:
+        p = 1
+    n = n // 10
+if p == 1:
+    print("Duck Number")
+else:
+    print("Not duck number")
