@@ -1,13 +1,11 @@
-import PyPDF2
+class Solution:
+    def checkStatus(self, a, b, flag):
+        # code here
+        if (a>=0 or b>=0) and flag==False:
+            return True
+        elif (a<0 and b<0) and flag==True:
+            return True
+        else:
+            return False
 
-def extract_text_from_pdf(pdf_path):
-    text = ""
-    with open(pdf_path, "rb") as file:
-        reader = PyPDF2.PdfReader(file)
-        for page in reader.pages:
-            text += page.extract_text() + "\n"
-    return text
-
-
-pr=extract_text_from_pdf(r"C:\Users\Srijan\Downloads\5013001190 (1).pdf")
-print(pr)
+    checkStatus(9,8,True)

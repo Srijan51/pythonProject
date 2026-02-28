@@ -16,4 +16,4 @@ if a==1:
     s=0
     for i in l:
         s=s+i
-    print("The equivalent resistance is:",s)
+    print("The equivalent resistance is:",s)++8
